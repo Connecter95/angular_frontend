@@ -6,6 +6,7 @@ import { CreateComponent } from './user/create/create.component';
 import { EditComponent } from './user/edit/edit.component';
 
 export const routes: Routes = [
+  { path: '', component: IndexComponent },
   { path: 'user', redirectTo: 'user/index', pathMatch: 'full'},
   { path: 'user/index', component: IndexComponent },
   { path: 'user/:userId/view', component: ViewComponent },
